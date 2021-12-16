@@ -30,5 +30,4 @@ jobs:
       - name: 🚀 publish
         run: npm publish --access public
         env:
-          ACTIONS_ALLOW_UNSECURE_COMMANDS: true
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
