@@ -19,6 +19,10 @@ jobs:
         with:
           node-version: 14
           registry-url: https://registry.npmjs.org
+      - name: 🔥 install dependencies
+        run: npm install
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: true
       - name: 🏗️ build
         run: npm run build
         env:
