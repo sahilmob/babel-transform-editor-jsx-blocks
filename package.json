@@ -1,5 +1,6 @@
 {
   "name": "babel-transform-editor-jsx-blocks",
+  "description": "Transform Reactjs component into Editorjs tool/blocks",
   "version": "0.1.0",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -7,9 +8,16 @@
     "name": "Sahil H. Mobaidin",
     "url": "https://github.com/sahilmob"
   },
+  "keywords": [
+    "editorjs",
+    "babel"
+  ],
+  "license": "MIT",
   "repository": {
-    "url": "https://github.com/sahilmob/babel-transform-editor-jsx-blocks"
+    "type": "git",
+    "url": "git+https://github.com/sahilmob/babel-transform-editor-jsx-blocks"
   },
+  "homepage": "https://github.com/sahilmob/babel-transform-editor-jsx-blocks#readme",
   "dependencies": {
     "@babel/generator": "^7.15.8",
     "@babel/plugin-transform-react-jsx": "^7.16.0",
