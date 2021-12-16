@@ -14,12 +14,17 @@ jobs:
         uses: actions/checkout@v2.1.1
       - name: 🟢 node
         uses: actions/setup-node@v1.4.2
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: true
         with:
           node-version: 14
           registry-url: https://registry.npmjs.org
       - name: 🏗️ build
         run: npm run build
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: true
       - name: 🚀 publish
         run: npm publish --access public
         env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: true
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
